@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16223A"/>
+      <stop offset="100%" stop-color="#1A2840"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2C4A8"/>
+      <stop offset="100%" stop-color="#C87A6A"/>
+    </linearGradient>
+    <filter id="g">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg)"/>
+  <path d="M 317 118 A 80 80 0 1 1 176 170" fill="none" stroke="url(#arc)" stroke-width="9" stroke-linecap="round" filter="url(#g)"/>
+  <circle cx="317" cy="118" r="13" fill="url(#arc)" filter="url(#g)"/>
+  <circle cx="236" cy="170" r="7" fill="#F5C97E" opacity="0.92"/>
+  <circle cx="256" cy="170" r="7" fill="#7ABFCC" opacity="0.92"/>
+  <circle cx="276" cy="170" r="7" fill="#A598D4" opacity="0.92"/>
+</svg>
